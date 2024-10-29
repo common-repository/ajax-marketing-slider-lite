@@ -1,0 +1,662 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+.select2-container {
+    width: 86%!important
+}
+
+#soasl_nav_buttons.button {
+    display: inline-block;
+    position: relative;
+    color: #888;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: helvetica, arial, sans-serif;
+    border-radius: 4px;
+    border: 1px solid #bcbcbc;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(239, 239, 239, 1) 60%, rgba(225, 223, 226, 1) 100%);
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(239, 239, 239, 1) 60%, rgba(225, 223, 226, 1) 100%);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(239, 239, 239, 1) 60%, rgba(225, 223, 226, 1) 100%);
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(239, 239, 239, 1) 60%, rgba(225, 223, 226, 1) 100%);
+    background-image: linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(239, 239, 239, 1) 60%, rgba(225, 223, 226, 1) 100%)
+}
+
+#soasl_nav_buttons .button:hover {
+    color: #555
+}
+
+#soasl_nav_buttons .button:active,
+.button:active:after,
+.button:active:before {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+#soasl_nav_buttons .button.back {
+    border-left: none;
+    position: absolute;
+    left: 0
+}
+
+#soasl_nav_buttons .button.back:after {
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 15px;
+    border-left: 1px solid #bcbcbc;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 1%, rgba(240, 240, 240, 1) 100%);
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 1%, rgba(240, 240, 240, 1) 100%);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 1%, rgba(240, 240, 240, 1) 100%);
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 1%, rgba(240, 240, 240, 1) 100%);
+    background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 1%, rgba(240, 240, 240, 1) 100%);
+    left: -5px;
+    top: 1px;
+    -webkit-transform: skew(-35deg, 0);
+    -moz-transform: skew(-35deg, 0);
+    -o-transform: skew(-35deg, 0);
+    -ms-transform: skew(-35deg, 0);
+    transform: skew(-35deg, 0)
+}
+
+#soasl_nav_buttons .button.back:before {
+    content: '';
+    position: absolute;
+    height: 48%;
+    width: 15px;
+    border-left: 1px solid #bcbcbc;
+    bottom: 1px;
+    left: -5px;
+    -webkit-transform: skew(35deg, 0);
+    -moz-transform: skew(35deg, 0);
+    -o-transform: skew(35deg, 0);
+    -ms-transform: skew(35deg, 0);
+    transform: skew(35deg, 0);
+    background-image: -webkit-linear-gradient(top, rgba(240, 240, 240, 1) 0, rgba(239, 239, 239, 1) 10%, rgba(225, 223, 226, 1) 100%);
+    background-image: -moz-linear-gradient(top, rgba(240, 240, 240, 1) 0, rgba(239, 239, 239, 1) 10%, rgba(225, 223, 226, 1) 100%);
+    background-image: -o-linear-gradient(top, rgba(240, 240, 240, 1) 0, rgba(239, 239, 239, 1) 10%, rgba(225, 223, 226, 1) 100%);
+    background-image: -ms-linear-gradient(top, rgba(240, 240, 240, 1) 0, rgba(239, 239, 239, 1) 10%, rgba(225, 223, 226, 1) 100%);
+    background-image: linear-gradient(top, rgba(240, 240, 240, 1) 0, rgba(239, 239, 239, 1) 10%, rgba(225, 223, 226, 1) 100%);
+    -webkit-box-shadow: -2px 1px 2px rgba(100, 100, 100, 0.1);
+    box-shadow: -2px 1px 2px rgba(100, 100, 100, 0.1)
+}
+
+#soasl_nav_buttons .button.next {
+    border-right: 0;
+    position: absolute;
+    right: 0
+}
+
+#soasl_nav_buttons .button.next:after {
+    content: '';
+    position: absolute;
+    height: 48%;
+    width: 15px;
+    border-right: 1px solid #bcbcbc;
+    background-image: -webkit-linear-gradient(top, rgba(240, 240, 240, 1) 0, rgba(239, 239, 239, 1) 10%, rgba(225, 223, 226, 1) 100%);
+    background-image: -moz-linear-gradient(top, rgba(240, 240, 240, 1) 0, rgba(239, 239, 239, 1) 10%, rgba(225, 223, 226, 1) 100%);
+    background-image: -o-linear-gradient(top, rgba(240, 240, 240, 1) 0, rgba(239, 239, 239, 1) 10%, rgba(225, 223, 226, 1) 100%);
+    background-image: -ms-linear-gradient(top, rgba(240, 240, 240, 1) 0, rgba(239, 239, 239, 1) 10%, rgba(225, 223, 226, 1) 100%);
+    background-image: linear-gradient(top, rgba(240, 240, 240, 1) 0, rgba(239, 239, 239, 1) 10%, rgba(225, 223, 226, 1) 100%);
+    right: -5px;
+    bottom: 1px;
+    -webkit-transform: skew(-35deg, 0);
+    -moz-transform: skew(-35deg, 0);
+    -o-transform: skew(-35deg, 0);
+    -ms-transform: skew(-35deg, 0);
+    transform: skew(-35deg, 0);
+    -webkit-box-shadow: 2px 1px 2px rgba(100, 100, 100, 0.1);
+    box-shadow: 2px 1px 2px rgba(100, 100, 100, 0.1)
+}
+
+#soasl_nav_buttons .button.next:before {
+    content: '';
+    position: absolute;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 1%, rgba(240, 240, 240, 1) 100%);
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 1%, rgba(240, 240, 240, 1) 100%);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 1%, rgba(240, 240, 240, 1) 100%);
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 1%, rgba(240, 240, 240, 1) 100%);
+    background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 1%, rgba(240, 240, 240, 1) 100%);
+    height: 50%;
+    width: 15px;
+    border-right: 1px solid #bcbcbc;
+    top: 1px;
+    right: -5px;
+    -webkit-transform: skew(35deg, 0);
+    -moz-transform: skew(35deg, 0);
+    -o-transform: skew(35deg, 0);
+    -ms-transform: skew(35deg, 0);
+    transform: skew(35deg, 0)
+}
+
+.soasl_slider_container label {
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #d1d3d4
+}
+
+.soasl_slider_container input.soasl_cats_item:empty {
+    margin-left: -999px
+}
+
+.soasl_slider_container input.soasl_cats_item:empty ~ label {
+    position: relative;
+    float: left;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    margin-top: 2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.soasl_slider_container input.soasl_cats_item:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    background: #d1d3d4;
+    border-radius: 3px 0 0 3px
+}
+
+.soasl_slider_container input.soasl_cats_item:hover:not(:checked) ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #c2c2c2
+}
+
+.soasl_slider_container input.soasl_cats_item:hover:not(:checked) ~ label {
+    color: #888
+}
+
+.soasl_slider_container input.soasl_cats_item:checked ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #9ce2ae;
+    background-color: #4dcb6d
+}
+
+.soasl_slider_container input.soasl_cats_item:checked ~ label {
+    color: #777
+}
+
+.soasl_slider_container input.soasl_cats_item:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999
+}
+
+.soasl_slider_container .soasl_cat_list_container {
+    clear: both;
+    margin: 0 50px
+}
+
+#soasl_fluid_container a {
+    box-shadow: none!important
+}
+
+.tile-small {
+    background-color: #fff
+}
+
+.tile-small:hover {
+    outline: none!important
+}
+
+.slides_container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 520px
+}
+
+.slide1,
+.slide2 {
+    display: inline-block;
+    width: 50%
+}
+
+.slides_main_container {
+    width: 212%;
+    position: absolute
+}
+
+.notify-container {
+    position: fixed;
+    top: 40%;
+    right: 50%
+}
+
+strong.select2-results__group {
+    cursor: pointer!important
+}
+
+.select2-dropdown {
+    top: 27px
+}
+
+.soasl_slide_container {
+    position: relative
+}
+
+.soasl_slider_inner_container {
+    width: 200%;
+    position: absolute
+}
+
+.slider_container {
+    width: 100%;
+    overflow: hidden
+}
+
+#soasl_slider_thumbnail {
+    min-height: 100%
+}
+
+#soasl_slider_thumbnail img {
+    border: none!important
+}
+
+#soasl_slider_carousel {
+    min-height: 100%!important
+}
+
+#soasl_ultimate_container section {
+    height: 100%
+}
+
+#soaslLoader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 10000
+}
+
+#soasl_main_container_1,
+#soasl_main_container_2,
+#soasl_main_container_3 {
+    min-height: 290px
+}
+
+#soasl_post_content_1,
+#soasl_post_content_2,
+#soasl_post_content_3 {
+    min-height: 120px
+}
+
+.carousel_inner {
+    height: 280px
+}
+
+#soasl_commerce_button_1 img,
+#soasl_commerce_button_2 img,
+#soasl_commerce_button_3 img {
+    margin: 0 auto
+}
+
+#soasl_main_img_1,
+#soasl_main_img_2,
+#soasl_main_img_3 {
+    padding-bottom: 10px
+}
+
+@font-face {
+    font-family: Aileron;
+    src: url('../fonts/aileron/Aileron-Black.otf')
+}
+
+@font-face {
+    font-family: Aileron;
+    font-weight: bold;
+    src: url('../fonts/aileron/Aileron-Bold.otf')
+}
+
+@font-face {
+    font-family: Archive;
+    src: url('../fonts/archive/Archive.otf')
+}
+
+#soasl_gallery_thumbs_1 img {
+    cursor: pointer
+}
+
+.soasl_gallery_item {
+    cursor: pointer
+}
+
+#soasl_gallery_thumbs_1,
+#soasl_gallery_thumbs_2,
+#soasl_gallery_thumbs_3 {
+    overflow: hidden;
+    position: absolute;
+    padding: 0!important;
+    margin: 0!important
+}
+
+.soaslgallerythumb {
+    opacity: 1;
+    position: static!important;
+    display: inline-block;
+    pointer-events: auto
+}
+
+.soasl_gallery_items {
+    position: relative;
+    overflow: hidden;
+    height: 79px
+}
+
+.soasl_gal_abs_next {
+    position: absolute;
+    vertical-align: middle;
+    display: block;
+    right: 0;
+    top: 0;
+    background-color: #000;
+    height: 100%;
+    color: #fff;
+    cursor: pointer
+}
+
+.soasl_gal_abs_next span {
+    line-height: 4;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 0 3px
+}
+
+.soasl_gal_abs_prev span {
+    line-height: 4;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 0 3px
+}
+
+.soasl_gal_abs_prev {
+    position: absolute;
+    vertical-align: middle;
+    display: block;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    height: 100%;
+    color: #fff;
+    cursor: pointer
+}
+
+.soasl_gallery_preview {
+    width: 90%;
+    overflow: hidden;
+    margin-left: 10px
+}
+
+.soaslRating {
+    opacity: .4;
+    display: table;
+    margin: 0 auto
+}
+
+.imgloader {
+    left: 45%;
+    top: 130px
+}
+
+#soasl_main_img_1,
+#soasl_main_img_2,
+#soasl_main_img_3 {
+    max-height: 380px
+}
+
+#soasl_post_url_2,
+#soasl_post_url_1,
+#soasl_post_url_3 {
+    text-decoration: none;
+    box-shadow: none
+}
+
+@media only screen and (min-device-width:100px) and (max-device-width:760px) and (-webkit-min-device-pixel-ratio:2) {
+    .soasl_contents h1 a {
+        font-size: .7em
+    }
+    #soasl_slider_thumbnail img {
+        margin: 0 auto!important;
+        max-width: 70%
+    }
+    .soasl_contents p {
+        font-size: .8em;
+        width: 80%;
+        margin: 0 auto
+    }
+    .component>ul {
+        height: 125%
+    }
+    #soasl_slider_thumbnail img {
+        margin: 0 auto
+    }
+    .soasl_contents {
+        padding: 0 35px
+    }
+    .featured_gallery {
+        max-height: 50%
+    }
+    #soasl_main_img_1,
+    #soasl_main_img_2,
+    #soasl_main_img_3 {
+        min-height: 180px
+    }
+    .imgloader {
+        left: 45%;
+        top: 80px
+    }
+}
+
+.soaslheaderbg {
+    text-align: center
+}
+
+.soaslheaderbg a {
+    text-decoration: none
+}
+
+.soaslSideNavPrevTxt {
+    padding: 10px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 37.5%;
+    height: 160px;
+    cursor: pointer;
+    z-index: 1000
+}
+
+.soaslSideNavPrevTxt a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    vertical-align: middle;
+    line-height: 8.3;
+    box-shadow: none
+}
+
+.soaslSideNavNextTxt {
+    padding: 10px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 37.5%;
+    height: 160px;
+    cursor: pointer;
+    z-index: 1000
+}
+
+.soaslSideNavNextTxt a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    vertical-align: middle;
+    line-height: 8.3;
+    box-shadow: none
+}
+
+.saletagc p {
+    margin-top: 17px;
+    text-align: center;
+    color: #fff!important
+}
+
+.soasl_commerce_price_tag {
+    padding: 18px 0;
+    background-color: black;
+    margin-bottom: 13px
+}
+
+#soasl_ultimate_container {
+    position: relative
+}
+
+#soasl_onsale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 79px;
+    z-index: 100
+}
+
+.soaslSale {
+    text-decoration: line-through
+}
+
+#loadingSliderContent {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 10000
+}
+
+#mainSliderLoader {
+    position: absolute;
+    left: 50%;
+    top: 50%
+}
+
+#loadingSliderContainer {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    background-color: #fff
+}
+
+.soaslSideNavPrev {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    cursor: pointer;
+    z-index: 1000
+}
+
+.soaslSideNavNext {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    z-index: 1000
+}
+
+.soasl_commerce_button {
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 180px
+}
+
+.soasl_commerce_price_tag p {
+    display: inline;
+    padding-left: 5px
+}
+
+.saletagc {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 59px;
+    height: 60px;
+    display: block;
+    background-size: 58px;
+    background-repeat: no-repeat
+}
+
+.soasl_contents p {
+    line-height: 1.3;
+    text-align: left;
+}
+
+.soasl_commerce_button a {
+    text-decoration: none
+}
+
+.soaslheaderbg {
+    margin: 0 0 30px 0!important
+}
+
+.soasl_readmore_button {
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 180px;
+    text-align: center
+}
+
+.soasl_readmore_button a {
+    text-decoration: none
+}
+
+.soasl_commerce_price_tag,
+.soasl_commerce_button {
+    text-align: center
+}
+
+#soasl_ultimate_container .addthis_sharing_toolbox {
+    text-align: center
+}
+
+#soasl_advertisement {
+    position: absolute;
+    top: 0;
+    width: 25%;
+    z-index: 1000
+}
+
+#soaslLoader2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    top: 50%;
+    margin-top: -50px;
+    width: 80px
+}
+
+#soasl_advertisement img {
+    max-height: 380px;
+}

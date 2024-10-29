@@ -1,0 +1,147 @@
+.rating {
+  cursor: pointer;
+  display: inline-block;
+}
+.rating:before,
+.rating:after {
+  display: table;
+  content: "";
+}
+.rating:after {
+  clear: both;
+}
+.rating .star {
+  cursor: pointer;
+  display: block;
+  float: left;
+  color: #555555;
+  font-size: 20px;
+  z-index: 1;
+  position: relative;
+  width: 20px;
+  height: 24px;
+  vertical-align: middle;
+  line-height: 22px;
+}
+.rating .star:before,
+.rating .star:after {
+  position: absolute;
+  content: '\2605';
+  display: block;
+  z-index: 2;
+  top: 0 ;
+  left: 0;
+  vertical-align: middle;
+}
+.rating .star.on {
+  color: gold;
+}
+.rating .star.on.half {
+  color: #555555;
+}
+.rating .star.on.half:after {
+  color: gold;
+}
+.rating .star.half:after {
+  z-index: 3;
+  width: 8px;
+  overflow: hidden;
+}
+.rating.poor .star.on {
+  color: #ce352c;
+}
+.rating.poor .star.on.half {
+  color: #555555;
+}
+.rating.poor .star.on.half:after {
+  color: #ce352c;
+}
+.rating.regular .star.on {
+  color: gold;
+}
+.rating.regular .star.on.half {
+  color: #555555;
+}
+.rating.regular .star.on.half:after {
+  color: gold;
+}
+.rating.good .star.on {
+  color: #60a917;
+}
+.rating.good .star.on.half {
+  color: #555555;
+}
+.rating.good .star.on.half:after {
+  color: #60a917;
+}
+.rating:not(.static) .star:hover {
+  color: gold ;
+}
+.rating:not(.static) .star:hover.half,
+.rating:not(.static) .star:hover.on.half {
+  color: gold;
+}
+.rating:not(.static) .star:hover.half:after,
+.rating:not(.static) .star:hover.on.half:after {
+  color: gold;
+}
+.rating:not(.static):hover > .star,
+.rating:not(.static):hover > .star:after {
+  color: gold ;
+}
+.rating:not(.static):hover > .star.half,
+.rating:not(.static):hover > .star:after.half,
+.rating:not(.static):hover > .star.on.half,
+.rating:not(.static):hover > .star:after.on.half {
+  color: gold;
+}
+.rating:not(.static):hover > .star.half:after,
+.rating:not(.static):hover > .star:after.half:after,
+.rating:not(.static):hover > .star.on.half:after,
+.rating:not(.static):hover > .star:after.on.half:after {
+  color: gold;
+}
+.rating:not(.static) .star:hover ~ .star,
+.rating:not(.static) .star:hover ~ .star:after {
+  color: gray ;
+}
+.rating:not(.static) .star:hover ~ .star.half,
+.rating:not(.static) .star:hover ~ .star:after.half,
+.rating:not(.static) .star:hover ~ .star.on.half,
+.rating:not(.static) .star:hover ~ .star:after.on.half {
+  color: gray;
+}
+.rating:not(.static) .star:hover ~ .star.half:after,
+.rating:not(.static) .star:hover ~ .star:after.half:after,
+.rating:not(.static) .star:hover ~ .star.on.half:after,
+.rating:not(.static) .star:hover ~ .star:after.on.half:after {
+  color: gray;
+}
+.rating.small .star {
+  width: 14px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.rating.small .star.half:after {
+  width: 6px;
+}
+.rating.large .star {
+  width: 28px;
+  height: 30px;
+  font-size: 32px;
+  line-height: 24px;
+}
+.rating.large .star.half:after {
+  width: 13px;
+}
+.rating .score {
+  display: block;
+  font-size: .8rem;
+}
+.rating.small .score {
+  font-size: .6rem;
+}
+.rating.large .score {
+  font-size: 1rem;
+}
